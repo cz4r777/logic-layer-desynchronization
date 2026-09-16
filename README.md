@@ -5,10 +5,10 @@ LLM Red Teaming, Adversarial AI, RLHF Sycophancy, Quant AI, Logic Verification, 
 mkdir logic-layer-desynchronization && cd logic-layer-desynchronization
 
 # 2. Add whitepaper as README.md
-cp /path/to/2026-09-17__logic-layer-desynchronization-whitepaper-v2.md README.md
+README.md
 
 # 3. Create LICENSE file
-cat << 'EOF' > LICENSE
+ LICENSE
 MIT License
 
 Copyright (c) 2026 Conrad Brookes
@@ -35,5 +35,4 @@ EOF
 # 4. Initialize and push via GitHub CLI
 git init
 git add README.md LICENSE
-git commit -m "feat: initial publication of Logic Layer Desynchronization whitepaper"
-gh repo create logic-layer-desynchronization --public --source=. --remote=origin --push
+
