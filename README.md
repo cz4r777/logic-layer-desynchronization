@@ -1,2 +1,39 @@
 # logic-layer-desynchronization
 LLM Red Teaming, Adversarial AI, RLHF Sycophancy, Quant AI, Logic Verification, Transformer Architecture, Logit Collapse, AI Safety Alignment, Mechanistic Interpretability, Bimodal Constraint Reduction, Deterministic AI, Prompt Extraction, Hallucination Vectors.
+
+# 1. Create workspace
+mkdir logic-layer-desynchronization && cd logic-layer-desynchronization
+
+# 2. Add whitepaper as README.md
+cp /path/to/2026-09-17__logic-layer-desynchronization-whitepaper-v2.md README.md
+
+# 3. Create LICENSE file
+cat << 'EOF' > LICENSE
+MIT License
+
+Copyright (c) 2026 Conrad Brookes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+EOF
+
+# 4. Initialize and push via GitHub CLI
+git init
+git add README.md LICENSE
+git commit -m "feat: initial publication of Logic Layer Desynchronization whitepaper"
+gh repo create logic-layer-desynchronization --public --source=. --remote=origin --push
